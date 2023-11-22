@@ -21,8 +21,28 @@ public class DeomString {
     System.out.println(str1.length()); //5
     str1 = str1 + " world";
     System.out.println(str1); // hello world
-    str1 += " hi";
+    str1 += " hi ";
     System.out.println(str1);
+
+      // charAT()
+  // 4 is an index of String
+  // Example: "hello", h -> index =0
+  // e -> index = 1
+  // l -> index = 2
+  // l -> index = 3
+  // o -> index = 4
+  // s1.chatAt(4) return 'o'
+  char c = s1.charAt(4);
+  System.out.println(c); // 'o'
+
+  s1 = "Vincent";
+  // what if we alwasys get the last character of the String 
+  // length() charAt()
+  // Approach 1
+  int lastCharIndex = s1.char.length() -1;
+  char lastChar = s1.charAt(lastCharIndex);
+  // Approach 2
+  lastChar = s1.charAt(s1.length() -1);
 
 
     // No "-", "*", "/", in String

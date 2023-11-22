@@ -3,7 +3,7 @@ public class DemoChar {
     //char means character
     char c1 = 'a';
     char c2 = 'b';
-    char c3 = ' '; //sapace is a single character
+    char c3 = ' '; //space is a single character
     char c4 = '#';
     char c5 = '1';
     // char c6 = "10"; syntax error, string -> char
