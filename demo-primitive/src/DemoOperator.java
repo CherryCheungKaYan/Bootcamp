@@ -1,3 +1,5 @@
+import javax.swing.event.SwingPropertyChangeSupport;
+
 public class DemoOperator {
   public static void main(String[] args) {
 
@@ -171,22 +173,43 @@ boolean b3 = true;
 // System.out.println("Odd number:" + isOdd); //Odd number: true
 
 //Solution 1
-double totalAmount = 0;
-int itemTotal = 3001; //subtotal
-// if itemTotal > 3000, No transportation fee, otherwise +3% transportation fee
-double deliveryRate = 0.03;
-double transportationFee = 0.0d;
+// double totalAmount = 0;
+// int itemTotal = 3001; //subtotal
+// // if itemTotal > 3000, No transportation fee, otherwise +3% transportation fee
+// double deliveryRate = 0.03;
+// double transportationFee = 0.0d;
 
-if (itemTotal <= 3000) {
-  transportationFee = itemTotal*deliveryRate;
-} 
-  totalAmount = itemTotal + transportationFee;
-  System.out.println("Total Amount=" + totalAmount);
+// if (itemTotal <= 3000) {
+//   transportationFee = itemTotal*deliveryRate;
+// } 
+//   totalAmount = itemTotal + transportationFee;
+//   System.out.println("Total Amount=" + totalAmount);
 
-//Soulution 2
-  deliveryRate = (itemTotal>3000)? 0 : (itemTotal*deliveryRate);
-  totalAmount = itemTotal + transportationFee;
-  System.out.println("Total Amount=" + totalAmount);
+// //Soulution 2
+//   deliveryRate = (itemTotal>3000)? 0 : (itemTotal*deliveryRate);
+//   totalAmount = itemTotal + transportationFee;
+//   System.out.println("Total Amount=" + totalAmount);
+
+  // >, <, >=, <=, !
+  // boolean isPassed = false;
+  // if (!isPassed) { // ==false
+  //   System.out.println("isPassed is false"); 
+  
+  // isPassed = true ; // re-assisngment 
+  // if (!isPassed) { //true
+  //   System.out.println("isPassed is true");
+
+  // String str = "www.apple.com";
+  // if (str.length() < 10 || "www.apple.com".equals(str)) {
+  //   System.out.println("length < 10 or www.apple.com");
+  
+  String s = "a"; // empty string, length = 0
+  System.out.println(s.length()); //0
+  s += "hello"; // s = s + hello
+  System.out.println(s);
+  if (!s.isEmpty()) {
+    System.out.println("s is NOT empty");
+  }
+
   }
 }
-

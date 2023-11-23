@@ -80,14 +80,96 @@ public class Practice {
   // // Approach 2
   // lastChar = s1.charAt(s1.length() -1);
 
+// String str = "happy";
+// int length = (str.length());
+// System.out.println(length);
+
+// String str2 = "delighted";
+// int length2 = (str2.length());
+// System.out.println(length2);
+
+// String str1 = "happy";
+// String str2 = "happy";
+// String str3 = "delighted";
+
+// boolean isequal1 = str1.equals(str2);
+// boolean isequal2 = str2.equals(str3);
+
+// System.out.println(isequal1);
+
+// String str = "hello";
+// char ch = str.charAt(4);
+// System.out.println(ch);
+
+// String str1 = "cherry";
+// char ch1 = str1.charAt(4);
+// System.out.println(ch1);
+
+// int x = 5;
+// x +=3; // x = x + 3
+
+// int y = 10;
+// y -=4; // y = y - 4
+
+// int x = 5;
+// int preIncrement = ++x;
+
+// String message = "hello";
+// message += "world";
+// System.out.println(message);
+
+// String message2 = "love";
+// message2 += " you"; // message 2 = message2 + you
+// System.out.println(message2);
+
+// boolean a = true;
+// boolean b = false;
+// boolean result=!a;
+// boolean result2=!b;
+// System.out.println(result2);
+
+int x = 3;
+int y = (x++ + 3) * x++;
+System.out.println(y);
 
 
+int score = 69;
 
+if (score >= 90){
+  System.out.println("Excellent!");
+} else if (score>=80) {
+  System.out.println("Good job");
+} else if (score>=70) {
+  System.out.println("Keep it up");
+} else 
+{ System.out.println("You can do better.");
+}
+
+char grade = 'C';
+
+if (grade != 'A') {
+  System.out.println("Well Done");
+} else {
+  System.out.println("You can do it better");
+}
+
+char google = 'A';
+if (google != 'A') {
+  System.out.println("proceed");
+} else {
+  System.out.println("Please fill in the form.");
+}
+
+boolean isRaining = "true";
+
+if (isRaining) {
+  System.out.println(Remember to take );
+}
     // No "-", "*", "/" in String
     // String supports "+", "+="
     
     
 
 
-}
+  }
 }
