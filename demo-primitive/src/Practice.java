@@ -165,12 +165,103 @@ public class Practice {
     // boolean result = name.isEmpty();
     // String result = name.toUpperCase();
     // String result = name.trim();
-    String result = name.replace('e', 'a');
+    // String result = name.replace('e', 'a');
 
-    System.out.println(result);
+    // System.out.println(result);
 
-  }
-}
+    // String str = "hello world";
+    // // if (!str.isEmpty()) {
+    // // System.out.println("String=" + str);
+    // // }
+    // // System.out.println(str.length());
+
+    // for (int i = 0; i < str.length(); i++) {
+    // if (i % 2 == 0) {
+    // System.out.println(str.charAt(i));
+    // }
+    // }
+    // System.out.println("");
+
+    // String s = "hello";
+    // String newStr = s.substring(2, 4);
+    // System.out.println("newStr=" + newStr);
+    // System.out.println(s.substring(0));
+
+    // String s3 = "1234567890";
+    // System.out.println(s3.length() == 10 && s3.startsWith("1"));
+    // System.out.println(
+    // "56".equals(s3.substring(4,6)) && s3.charAt(s3.length() -1) == '0');
+
+    // System.out.println(s3.indexOf('7'));
+    // System.out.println(s3.indexOf('7', 8));
+
+    // System.out.println(s3.lastIndexOf('5'));
+
+    String s5 = "ABabcxabcdef";
+    // System.out.println(s5.lastIndexOf("abc"));
+    // if (s5.length() > 20) {
+    // System.out.println("s5=" + s5 );
+
+    // String s6 = "abc";
+    // String s7 = "def";
+    // System.out.println(s6.concat(s7));
+    // System.out.println(s6 + s7);
+
+    // System.out.println(s5.indexOf("abcdef") != -1);
+
+    // int[] arr2 = new int[5];
+    // int[] arr3 = new int[] { 100, 5, 30, 9, -40 };
+    // System.out.println(arr2.length);
+
+    // arr2 = new int[10];
+    // System.out.println(arr2.length);
+
+    int[] arr5 = new int[3];
+    // for (int i = 0; i < arr5.length; i++) {
+    // arr5[i] = i + 1;
+    // System.out.println("arr5[i]=" + arr5[i]);
+    // }
+
+     for (int i = arr5.length-1; i>=0; i--) {
+    System.out.print(arr5[i]);
+    if (i > 0) {
+    System.out.println(" ");
+
+//     int temp;
+//  for (int i = 0; i < arr.length; i++) {
+//       if (i == 0) {
+//         // swapping
+//         temp = arr[i];
+//         arr[i] = arr[i + 1];
+//         arr[i + 1] = temp;
+      }
+    }
+    // System.out.println(Arrays.toString(arr));
+
+    // int[] arr = new int[] { 10, 16, 8 };
+    // int sum = 0;
+    // for (int i = 0; i < arr.length; i++) {
+    //   sum += arr[i];
+    // }
+    // System.out.println("sum=" + sum);
+
+    // int max = Integer.MIN_VALUE;
+    // for (int i = 0; i < arr.length; i++) {
+    //   if (arr[i] > max) {
+    //     max = arr[i];
+    //   }
+    // }
+    // System.out.println("max=" + max);
+
+    // int min= Integer.MAX_VALUE;
+    // for (int i = 0; i < arr.length; i++) {
+    //   if (arr[i] < min) {
+        // min = arr[i];
+      }
+    }
+    // System.out.println("min=" + min);
+
+
 
 // No "-", "*", "/" in String
 // String supports "+", "+="
