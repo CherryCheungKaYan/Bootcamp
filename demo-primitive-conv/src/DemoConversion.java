@@ -35,7 +35,7 @@ public class DemoConversion {
 
         // char vs int
         int i3 = 'a'; // 97, upcast
-        int i4 = 65610; // char max value: 65535
+        int i4 = 65610; // 65160-65535     //char max value: 65535
         char c3 = (char) i4; // downcast
         System.out.println("c3(int)=" + (int) c3); // 74
         System.out.println("c3 (char)=" + c3); // J

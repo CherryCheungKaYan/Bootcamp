@@ -46,17 +46,58 @@ public class DemoArray3 {
     arr3[maxIndex] = arr3[arr3.length - 1];
     arr3[arr3.length - 1] = temp;
 
-    //Arroach 2: 
-    int [] arr4 = new int [] {100, 4, 1050, 500, -20}; 
-    for (;;) {
-      for (int i = 0; i < arr4.length - 1; i++) {
-      if (arr4[i] > arr4 [i + 1]) {
-        temp = arr4[i];
-        arr4[i] = arr4 [ i+1];
-        arr4 [ i+1]= temp; 
-      }
+    // Arroach 2:
+    int[] arr4 = new int[] { 100, 4, 1050, 500, -20 };
+    // for (;;) {
+    // for (int i = 0; i < arr4.length - 1; i++) {
+    // if (arr4[i] > arr4[i + 1]) {
+    // temp = arr4[i];
+    // arr4[i] = arr4[i + 1];
+    // arr4[i + 1] = temp;
+    // }
+    // }
+    // }
+    // System.out.println(Arrays.toString(arr4));
+
+    String s = "abcdaabcaabcaabc";
+    char[] arr5 = new char[s.length()];
+    // Approach 1
+    for (int i = 0; i < s.length(); i++) {
+      arr5[i] = s.charAt(i);
+    }
+    // Approach 2
+    char[] arr6 = s.toCharArray(); //
+    // replace a -> c (String)
+
+    char[] arr7 = new char[s.length()];
+    for (int i = 0; i < s.length(); i++) {
+      if (s.charAt(i) == 'a') {
+        arr7[i] = 'c';
+      } else if (s.charAt(i) == 'c') {
+        arr7[i] = 'a';
+      } else {
+        arr7[i] = s.charAt(i);
       }
     }
-    System.out.println(Arrays.toString(arr4));
+    System.out.println(Arrays.toString(arr7));
+
+    // From array to String
+    System.out.println(String.valueOf(arr7));
+
+    String str = "hello";
+    str = new String("hello");
+    str = String.valueOf("hello");
+
+    System.out.println(String.valueOf(1));
+    System.out.println(String.valueOf(1.0d));
+    System.out.println(String.valueOf(new char[] { 'a', 'b' })); // ab
+    // System.out.println(new char[] {'a', 'b'}); //ab
+
+    // Replace (String method)
+    String str4 = "abcdaabcaabcaabc";
+    String result4 = str4.replace('a', 'c'); //replace a by c
+    System.out.println("str4=" + str4);
+    System.out.println("result=" + result4);
+
   }
 }
