@@ -137,26 +137,26 @@ public class Practice {
     // System.out.println("Looking forward");
     // }
 
-    // String serachMe = "peter piper picked a peck of pickled peppers";
-    // int num = 0;
+    String serachMe = "peter piper picked a peck of pickled peppers";
+    int num = 0;
 
-    // for (int i = 0; i < serachMe.length(); i++) {
-    // if (serachMe.charAt(i) != 'p') {
-    // continue;
-    // }
-    // ++num;
-    // }
-    // System.out.println("Found" + num + "p's in the string.");
+    for (int i = 0; i < serachMe.length(); i++) {
+    if (serachMe.charAt(i) != 'p') {
+    continue;
+    }
+    ++num;
+    }
+    System.out.println("Found" + num + "p's in the string.");
 
-    // String s1 = "i love my kids very much.";
-    // int count = 0;
-    // for (int i = 0; i < s1.length(); i++) {
-    // if (s1.charAt(i) != 'y') {
-    // continue;
-    // }
-    // count++;
-    // }
-    // System.out.println("Found" + count + "y's in the string.");
+    String s1 = "i love my kids very much.";
+    int count = 0;
+    for (int i = 0; i < s1.length(); i++) {
+    if (s1.charAt(i) != 'y') {
+    continue;
+    }
+    count++;
+    }
+    System.out.println("Found" + count + "y's in the string.");
 
     String name = "Cherry";
     // boolean result = name.equalsIgnoreCase("Cherry");

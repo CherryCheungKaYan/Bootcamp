@@ -12,9 +12,10 @@ public class Person {
 
     }
 
-    public Person(String nameFirst, String nameLast, int age) {
-        this.nameFirst = nameFirst;
-        this.nameLast = nameLast;
+    public Person(String firstName, String lastName, int age) {
+        this.nameFirst = firstName;
+        this.nameLast = lastName;
+        this(lastName,firstName)
         this.age = age;
     }
 
