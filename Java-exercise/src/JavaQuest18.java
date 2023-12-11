@@ -20,14 +20,24 @@ public class JavaQuest18 {
 
   private static boolean isPalindrome(String s) {
     // hints : if a String is Palindrome , return true
-    //
-    return true;
+    char[] arr = s.toCharArray();
+    
+    for (int i = 0; i < arr.length / 2; i++)
+      if (arr[i] != arr[arr.length - 1 - i]) {
+        return false;
+      }
+  return true;
   }
 
   public static String firstPalindrome(String[] words) {
     // hints : finish the logic by using isPalindrome() , for-loop , if-else
-
-    return "";
+    for (int i = 0; i < words.length; i++ ){
+      if (isPalindrome(words[i])) {
+        return words[i];
+      }
+    } 
+    return "No Palindrome word in String Array.";
+        
   }
 
 }

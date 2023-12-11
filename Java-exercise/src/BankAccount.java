@@ -29,19 +29,19 @@ public class BankAccount {
   }
 
   public String getAccountHolder() {
-    return accountHolder;
+    return this.accountHolder;
   }
 
   public String getAccountNubmer() {
-    return accountNumber;
+    return this.accountNumber;
   }
 
   public Double getBalance() {
-    return balance;
+    return this.balance;
   }
 
   public boolean getisActive() {
-    return isActive;
+    return this.isActive;
   }
 
   public void deposit(double amount) {

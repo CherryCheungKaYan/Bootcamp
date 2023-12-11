@@ -39,15 +39,11 @@ public class JavaQuest14 {
   // false
   public static boolean palindrome(int num) {
     // code here ...
-    String rest1 = Integer.toString(num);
-    for (int i = 0; i < rest1.length(); i++) 
-    if {
-      rest1.indexOf(0) == rest1.length()-1
-    }
-    if {
-      retrun true
-    }
-    
-    return false;
-  }
+    String rest1 = String.valueOf(num);
+    for (int i = 0; i < rest1.length() / 2; i++)
+      if (rest1.charAt(i) != rest1.charAt(rest1.length() - 1 - i)) {
+        return false;
+      }
+  return true;
+}
 }
