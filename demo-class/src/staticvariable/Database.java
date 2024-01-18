@@ -2,7 +2,24 @@ package staticvariable;
 
 public class Database {
 
-  private static String[] strings = new String[0];
+  private static String[] strings = new String[0]; // strings is Class Data
+
+  // instatnce (final vs non-final)
+  // int number; -> Setter
+  // final int number = 3; -> No setter
+
+  // final vs static final
+  // 1. "final" is still instance variable, the object can call it by "this"
+  // 2. "static final" is constant
+
+  // No static and No final (instance variable)
+  // static
+  // final (instance variable)
+  // static final
+
+  private final int hoursPerDay = 24; // Constant instance variable
+
+  private static final int MINUTES_PER_HOUR = 60; // Constant (MINUTES_PER_HOUR is Class Data)
 
   public static void add(String str) {
     String[] newArr = new String[strings.length + 1];
@@ -54,6 +71,8 @@ public class Database {
     Database.add("world"); // ["hello", "world"]
     Database.remove(0); // ["world"]
     System.out.println(Database.get(0)); // world
+
+    System.out.println(Database.MINUTES_PER_HOUR); // 60
 
   }
 

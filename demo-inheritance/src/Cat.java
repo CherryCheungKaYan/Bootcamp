@@ -11,6 +11,7 @@ public class Cat extends Animal {
     Cat cat = new Cat(); // Create a Cat Object -> Cat() -> call Animal()
     cat.setAge(2);
     System.out.println(cat.getAge()); // 2
+
   }
 
 }

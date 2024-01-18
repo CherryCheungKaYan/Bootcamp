@@ -10,7 +10,8 @@ public class Order {
 
   private LocalDate buyDate;
 
-  private static int OrderNo; `
+  private static int orderNo = 0;
+
   // private double totalAmount; // derived by Item[]
 
   private Item[] items;
@@ -18,9 +19,10 @@ public class Order {
   // private int status; // 0 - pending, 1 - completed
 
   // public Order(int id, LocalDate buyDate, double totalAmount) {
-  public Order(int id, LocalDate buyDate) {
-   // this.id = id;
-  
+  // public Order(int id, LocalDate buyDate) {
+  public Order(LocalDate buyDate) {
+    // this.id = id;
+    this.id = ++orderNo;
     this.buyDate = buyDate;
     this.items = new Item[0];
     // this.totalAmount = totalAmount;
@@ -75,7 +77,7 @@ public class Order {
     // Item[] items =
     // new Item[] {new Item(10.0, 4, "ABC"), new Item(20.5, 4, "DEF")};
 
-    Order order = new Order(1, LocalDate.of(2000, 10, 1));
+    Order order = new Order(LocalDate.of(2000, 10, 1));
     order.addItem(new Item(10.0, 4, "ABC"));
     order.addItem(new Item(20.5, 4, "DEF"));
 

@@ -6,24 +6,44 @@ public class Library {
 
   private static int bookCounter = 0;
 
+  private static Librarian librarian;
+  // private Librarian librarian;
+
   private Book[] books;
 
-  public Library() {
+  public Library(Librarian librarian) {
     this.books = new Book[0];
+    Library.librarian = librarian;
+  }
+
+  public String librarianName() {
+    return librarian.getName();
+  }
+
+  public int bookCount() { // instance method can access static variable
+    return bookCounter;
   }
 
   public void addBook(Book book) {
-    bookCounter++; // keeps track of the number of books in the array.
+    bookCounter++;
     Book[] newBooks = Arrays.copyOf(this.books, this.books.length + 1);
     newBooks[newBooks.length - 1] = book;
-    // This line assigns the book object passed as a parameter to the last element
-    // of the newBooks array.
-    // The newBooks.length - 1 expression is used to access the index of the last
-    // element of the array,
-    // as array indices start from 0.
   }
 
   public static void main(String[] args) {
 
+    Librarian librarian = new Librarian("Jenny");
+    Library library = new Library(librarian);
+    library.addBook(new Book());
+    System.out.println(library.bookCount()); // 1
+    library.addBook(new Book());
+    library.addBook(new Book());
+    System.out.println(library.bookCount()); // 3
+
+    Librarian librarian2 = new Librarian("Tommy");
+    Library library2 = new Library(librarian2);
+
+    System.out.println(library.librarianName()); // Tommy
+    System.out.println(library2.librarianName()); // Tommy
   }
 }
